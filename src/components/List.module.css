@@ -1,0 +1,138 @@
+
+.list {
+  position: relative; 
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: -4rem;
+  margin-bottom: 3rem;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-right: 1rem;
+  padding: 0rem 1rem;
+  color: var(--white);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-700);
+  background-color: var(--gray-500);
+  }
+
+  input[type=text]:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue-dark);
+  color: var(--white);
+  width: 12rem;
+
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 12rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--gray-500);
+  color: var(--gray-300);
+  width: 12rem;
+  cursor: not-allowed;
+}
+
+.icon {
+  margin-left: 1rem;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.emptyList {
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--gray-500);
+}
+
+.emptyList img {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 1rem;
+}
+
+.emptyList p {
+    line-height: 1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.createdTasksCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createdTasksCounter p {
+  font-weight: 700;
+  margin-right: 1rem;
+  color: var(--blue);
+}
+
+.createdTasksCounter span {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: var(--gray-400);
+  color: var(--white);
+}
+
+.completedTasksCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.completedTasksCounter p {
+  font-weight: 700; 
+  margin-right: 1rem;
+  color: var(--purple);
+}
+
+.completedTasksCounter span {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: var(--gray-400);
+  color: var(--white);
+}
